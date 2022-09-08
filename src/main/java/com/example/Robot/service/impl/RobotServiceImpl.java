@@ -14,20 +14,6 @@ public class RobotServiceImpl implements RobotService {
     @Override
     public RobotResponse solucion(RobotRequest instructions) {
         RobotResponse respuesta = new RobotResponse();
-/* 
-        for (List<String> lista : instructions.getInstructions()) {
-            for(String instruccion : lista) {
-                System.out.println("instruccion: "+  instruccion);
-                if (instruccion.equals("LEFT")){
-                    respuesta.getRespuesta().set(i,-1); 
-                } else if (instruccion.equals("RIGHT")){
-                    respuesta.getRespuesta().set(i,1); 
-                }else if (instruccion.equals("SAME AS")){
-
-                }
-
-            }
-        }*/
 
         for (int i=0; i<instructions.getInstructions().size();i++) // si son dos listas devuelve el 2
         {
